@@ -1,0 +1,77 @@
+@import "config";
+
+body {
+  background: $secondary-color;
+  color: set-text-color($secondary-color);
+  //   vh is the viewport
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+header {
+  position: relative;
+  //   why bg pattern does not work
+  // background: url(./dist/images/pattern-bg.png) no-repeat;
+  background-color: rgb(63, 149, 246);
+  padding-bottom: 5rem;
+  width: 100%;
+
+  h1 {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    color: $secondary-color;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .search-msg {
+      background: rgb(255, 255, 254);
+      height: 3rem;
+      margin-top: 2rem;
+      padding: 0.5rem;
+      width: 60%;
+    }
+    .arrow-img {
+      background: black;
+      height: 3rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  background-color: white;
+  max-width: 24rem;
+  padding: 2rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+
+  .info {
+    text-align: center;
+    font-size: x-large;
+    .title {
+      color: rgb(176, 173, 173);
+    }
+    .specification {
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+  }
+}
+#map {
+  height: 100%;
+  opacity: 0.99;
+}
